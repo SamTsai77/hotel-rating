@@ -1,4 +1,6 @@
-# HotelRating
+# Showcased the use of Angular through a hotel rating app with interactive UI features.
+## Applied Technologies: Angular, Typescript, Node.js, HTML, CSS, JSON
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2.
 
