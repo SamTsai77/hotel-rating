@@ -227,7 +227,9 @@
       </svg>
       <h1>{{ title }}</h1>
       <div class="content">
-      <app-hotel-info hotelsJsonString=
+      <app-hotel-info 
+      @input childP="",
+      hotelsJsonString=
       '[{"name": "Super8", "description": "Super 8, is an American hotel brand, being the largest budget hotel chain in the world with over 2,600 locations", "rates":[{"rate":4,"comment":"Great value"},{"rate":3,"comment":"Concern on cleaness"}]},
         {"name": "Marriott ", "description": "Wide range from budget to luxury, strong loyalty program (Bonvoy), business and leisure travel", "rates":[{"rate":4,"comment":"Great value and service"},{"rate":5,"comment":"Great service"}]}]'></app-hotel-info>
   </div>

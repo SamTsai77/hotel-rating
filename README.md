@@ -14,4 +14,6 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-![alt text](./pic1.png)
+![alt text](./src/images/pic1.png)
+
+![alt text](./src/images/pic2.png)
