@@ -1,0 +1,33 @@
+ <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Average Rate:
+        </mat-panel-title>
+        <br>
+        <mat-panel-description>
+
+           {{item['averageRate'] | number:'1.2-2' }}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <div *ngFor="let rateitem of item['rates']">
+        <div> Rate: {{rateitem['rate']}}</div>
+        <div> Comment: {{rateitem['comment']}}</div>
+      </div>
+      <div>
+        <mat-radio-group [(ngModel)]="rateValue">
+          Rate:
+          <mat-radio-button value="1">1</mat-radio-button>
+          <mat-radio-button value="2">2</mat-radio-button>
+          <mat-radio-button value="3">3</mat-radio-button>
+          <mat-radio-button value="4">4</mat-radio-button>
+          <mat-radio-button value="5">5</mat-radio-button>
+      </mat-radio-group>
+      <br>
+
+        <!-- <input type="text" [(ngModel)]="rateValue" placeholder="Rate"> -->
+        <input type="text" [(ngModel)]="commentValue" placeholder="Comment">
+        <button (click)="handleAddRate(item['name'])">Add Rate</button>
+      </div>
+
+</mat-expansion-panel>
